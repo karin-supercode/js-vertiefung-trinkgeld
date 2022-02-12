@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt Trinkgeldrechner</title>
+    <link rel="stylesheet" href="assets/scss/main.css" />
+  </head>
+
+  <body>
+
+    <section>
+      <form action="" onsubmit="return false" id="formular" >
+
+      <label for="rechnung">Wie hoch war die Rechnung</label>
+      <input type="number" name="rechnung" step=".01" id="rechnungsbetrag">
+
+      <label for="personen">Wie viele Menschen teilen sich die Rechnung?</label>
+      <input type="number" name="personen" id="wievielepersonen">
+
+      <select name="service" id="service" size="1" autofocus>
+          <option value="wiewars">Wie war der Service?</option>
+          <option value="schlecht">Schlecht</option>
+          <option value="okay">Okay</option>
+          <option value="super">Super</option>
+      </select>
+
+    <input type="submit" value="Abschicken" onclick="berechnen()">
+
+    <div id="ausgabe1"></div>
+
+
+
+      </form>
+    </section>
+
+
+    <script src="https://kit.fontawesome.com/414a930ca8.js" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
